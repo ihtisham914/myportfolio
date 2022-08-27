@@ -66,16 +66,16 @@ export default {
       <div class="img_container">
         <div class="icons_links">
           <a href="https://gitlab.com/ihtisham914" target="_blank">
-            <!-- <font-awesome-icon :icon="['fab', 'gitlab']"/> -->
+            <fa :icon="['fab', 'gitlab']" />
           </a>
           <a href="https://github.com/ihtisham914" target="_blank">
-            <!-- <font-awesome-icon :icon="['fab', 'github']" /> -->
+            <fa :icon="['fab', 'github']" />
           </a>
           <a
             href="https://linkedin.com/in/ihtisham-ul-haq-998669223"
             target="_blank"
           >
-            <!-- <font-awesome-icon :icon="['fab', 'linkedin']" /> -->
+            <fa :icon="['fab', 'linkedin']" />
           </a>
         </div>
 

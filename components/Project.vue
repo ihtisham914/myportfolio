@@ -5,6 +5,7 @@ export default {
     title: String,
     para: String,
     link: String,
+    code: String,
     img_1: String,
   },
 }
@@ -20,7 +21,9 @@ export default {
         {{ para }}
       </p>
       <span style="margin-right: 1rem; font-size: 2.2rem">Link:</span
-      ><a :href="`${link}`" target="_blank">Click to visit the site</a>
+      ><a :href="`${link}`" target="_blank">Visit the site</a><br />
+      <span style="margin-right: 1rem; font-size: 2.2rem">Code: </span
+      ><a :href="`${code}`" target="_blank">See code</a>
     </div>
     <div class="img_container">
       <img

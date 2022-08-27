@@ -14,10 +14,10 @@ export default {
 <template>
   <div class="container glass" id="skills">
     <h3 class="heading text-50px">
-      <!-- <font-awesome-icon
+      <fa
         :icon="['fas', 'user-gear']"
         :style="{ color: '#9e00f9', marginRight: '1rem' }"
-      /> -->
+      />
       Skilled In Technologies
     </h3>
     <div class="grid-cols-3">
@@ -59,11 +59,11 @@ export default {
         color="#c092f9"
       />
       <div class="talk">
-        <!-- <font-awesome-icon
+        <fa
           :icon="['fas', 'person-circle-question']"
           class="fa-3x"
           :style="{ color: '#ee7d7d' }"
-        /> -->
+        />
         <h3 class="heading_sure">Not sure yet!</h3>
         <p>If you are not sure about your Project, let's talk about it ...</p>
         <Button title="Let's Talk" color="#fff" bgcolor="#3C2DE8BD" />

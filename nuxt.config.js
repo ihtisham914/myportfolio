@@ -4,17 +4,6 @@ export default {
 
   mode: 'universal',
 
-  modules: ['@unocss/nuxt'],
-  buildModules: ['@nuxtjs/fontawesome'],
-  fontawesome: {
-    component: 'Fa',
-    suffix: false,
-    icons: {
-      solid: true,
-      brands: true,
-      regular: true,
-    },
-  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'myportfolio',
@@ -44,8 +33,6 @@ export default {
     ],
   },
 
-  // adding fontawesome
-
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
@@ -56,13 +43,28 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
+  buildModules: ['@nuxtjs/fontawesome'],
+  fontawesome: {
+    component: 'Fa',
+    suffix: false,
+    icons: {
+      solid: true,
+      brands: true,
+      regular: true,
+    },
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
   ],
+  // unocss: {
+  //   uno: true,
+  //   preflight: true,
+  //   icons: true, // enabled `@unocss/preset-icons`
+  //   attributify: true, // enabled `@unocss/preset-attributify`,
+  // },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {

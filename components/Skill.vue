@@ -15,13 +15,7 @@ export default {
 <template>
   <div class="skill" :style="{ background: color }">
     <div class="icons">
-      <!-- <fa :icon="['fas', 'adjust']" /> -->
-      <!-- <font-awesome-icon
-        :icon="['fab', icon]"
-        class="fa-3x"
-        :style="{ color: iconColor }"
-      /> -->
-      <!-- <font-awesome-icon :icon="['fab', 'css3']" /> -->
+      <fa :icon="['fab', icon]" class="fa-3x" :style="{ color: iconColor }" />
     </div>
     <h3 class="heading">{{ heading }}</h3>
     <p>{{ para }}</p>

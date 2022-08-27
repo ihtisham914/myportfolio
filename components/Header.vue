@@ -1,6 +1,8 @@
 <template>
-  <header class="">
-    <div><a class="logo" href="#home">Ihtisham Ul Haq</a></div>
+  <header>
+    <div>
+      <a class="logo" href="#home">Ihtisham Ul Haq</a>
+    </div>
     <ul class="links">
       <li><a href="#home">Home</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -8,19 +10,17 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div v-show="!show" class="link_icon_open">
-      <!-- <ion-icon name="menu" @click="showMenu"></ion-icon> -->
+      <fa @click="showMenu" :icon="['fas', 'bars']" />
     </div>
     <div v-show="show" class="link_icon">
-      <!-- <ion-icon name="close" @click="showMenu"></ion-icon> -->
+      <fa @click="showMenu" :icon="['fas', 'xmark']" />
     </div>
-    <!-- <div v-show="show" class="links_parent"> -->
     <ul v-show="show" class="menu_links">
       <li><a href="#home">Home</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <!-- </div> -->
   </header>
 </template>
 
@@ -76,7 +76,9 @@ ion-icon {
   visibility: visible;
 }
 
-.link_icon_open {
+.link_icon_open,
+.menu_links,
+.link_icon {
   display: none;
   visibility: hidden;
 }
@@ -97,7 +99,7 @@ ion-icon {
   align-items: flex-start;
   gap: 3rem;
   border-radius: 1.6rem;
-  background-color: #f188fcc5;
+  background-color: #b24fecc5;
   backdrop-filter: blur(5rem);
   list-style: none;
   width: 30%;
@@ -148,6 +150,16 @@ ul a a:visited {
   .links {
     display: none;
     visibility: hidden;
+  }
+
+  .menu_links {
+    display: flex;
+    visibility: visible;
+  }
+
+  .link_icon {
+    display: inline-block;
+    visibility: visible;
   }
 
   .menu_links {
